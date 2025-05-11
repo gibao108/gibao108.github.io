@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Hỗ trợ khách hàng - Gas Spark</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f4f8fb;
+      margin: 0;
+      padding: 0;
+    }
+
+    .support-container {
+      max-width: 1100px;
+      margin: 40px auto;
+      padding: 40px;
+      background-color: #fff;
+      border-radius: 16px;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+    }
+
+    .support-container h1 {
+      text-align: center;
+      color: #007bff;
+      margin-bottom: 20px;
+    }
+
+    .faq-section {
+      margin-bottom: 40px;
+    }
+
+    .faq-section h2 {
+      margin-bottom: 10px;
+      color: #007bff;
+      border-left: 5px solid #007bff;
+      padding-left: 10px;
+    }
+
+    .faq-item {
+      margin-bottom: 20px;
+    }
+
+    .faq-item h3 {
+      margin: 0;
+      color: #333;
+      font-size: 18px;
+    }
+
+    .faq-item p {
+      margin: 5px 0 0 15px;
+      color: #555;
+      font-size: 15px;
+    }
+
+    .contact-info {
+      margin-bottom: 40px;
+      padding: 20px;
+      background-color: #e9f3ff;
+      border-radius: 10px;
+    }
+
+    .contact-info h2 {
+      color: #0056b3;
+    }
+
+    .contact-info p {
+      margin: 6px 0;
+      font-size: 15px;
+    }
+
+    .contact-form h2 {
+      color: #007bff;
+      margin-bottom: 10px;
+    }
+
+    .contact-form form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 16px;
+    }
+
+    .contact-form button {
+      padding: 12px;
+      background-color: #007bff;
+      color: white;
+      font-weight: bold;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .contact-form button:hover {
+      background-color: #0056b3;
+    }
+    .call-now-button {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  background-color: #ff3d3d;
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+  padding: 15px 20px;
+  border-radius: 50px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+  text-decoration: none;
+  z-index: 1000;
+  animation: ring 2s infinite;
+  transition: background-color 0.3s;
+}
+
+.call-now-button:hover {
+  background-color: #d60000;
+}
+
+/* Hiệu ứng rung */
+@keyframes ring {
+  0% { transform: rotate(0); }
+  10% { transform: rotate(15deg); }
+  20% { transform: rotate(-10deg); }
+  30% { transform: rotate(5deg); }
+  40% { transform: rotate(-5deg); }
+  50% { transform: rotate(0); }
+  100% { transform: rotate(0); }
+}
+
+  </style>
+</head>
+
+<body>
+  <div class="support-container">
+    <h1>📞 Trung tâm Hỗ trợ Khách hàng - Gas Spark</h1>
+
+    <!-- Phần Câu Hỏi Thường Gặp -->
+    <div class="faq-section">
+      <h2>❓ Câu hỏi thường gặp</h2>
+
+      <div class="faq-item">
+        <h3>📦 Làm sao để theo dõi đơn hàng?</h3>
+        <p>Đăng nhập tài khoản và truy cập mục "Đơn hàng của tôi" để xem trạng thái đơn hàng.</p>
+      </div>
+
+      <div class="faq-item">
+        <h3>💳 Tôi có thể thanh toán như thế nào?</h3>
+        <p>Hỗ trợ thanh toán khi nhận hàng, Momo, chuyển khoản ngân hàng.</p>
+      </div>
+
+      <div class="faq-item">
+        <h3>🔄 Chính sách đổi trả là gì?</h3>
+        <p>Đổi trả trong vòng 7 ngày nếu sản phẩm lỗi do vận chuyển hoặc sản xuất.</p>
+      </div>
+
+      <div class="faq-item">
+        <h3>🚚 Thời gian giao hàng là bao lâu?</h3>
+        <p>Thông thường từ 1-3 ngày làm việc tùy khu vực bạn đang ở.</p>
+      </div>
+    </div>
+
+    <!-- Thông tin liên hệ -->
+    <div class="contact-info">
+      <h2>📬 Thông tin liên hệ trực tiếp</h2>
+      <p>☎️ Hotline: <strong>1900 999 888</strong></p>
+      <p>📧 Email: <a href="mailto:hotro@gasspark.vn">hotro@gasspark.vn</a></p>
+      <p>🕐 Giờ làm việc: Thứ 2 - Thứ 7 (8:00 - 17:30)</p>
+      <p>📍 Địa chỉ: 123 Đường Nước Ngọt, Quận Sảng Khoái, TP. HCM</p>
+    </div>
+
+    <!-- Biểu mẫu gửi hỗ trợ -->
+    <div class="contact-form">
+      <h2>📝 Gửi yêu cầu hỗ trợ</h2>
+      <form>
+        <input type="text" placeholder="Họ và tên" required />
+        <input type="email" placeholder="Email của bạn" required />
+        <input type="text" placeholder="Số điện thoại (tùy chọn)" />
+        <textarea rows="5" placeholder="Bạn cần hỗ trợ điều gì?" required></textarea>
+        <button type="submit">Gửi yêu cầu</button>
+      </form>
+    </div>
+  </div>
+  <a href="tel:0352130708" class="call-now-button">
+    📞 Gọi ngay
+  </a>
+</body>
+</html>

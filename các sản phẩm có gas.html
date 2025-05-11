@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sản phẩm nước ngọt</title>
+  <style>
+   * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+    .background {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 200%;
+      background-image: url('img/background_cogas.jpg');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      animation: scrollBackground 10s linear infinite;
+      z-index: -1;
+    }
+
+    @keyframes scrollBackground {
+      0% {
+        transform: translateY(0);
+      }
+      100% {
+        transform: translateY(-50%);
+      }
+    }
+
+    .content {
+      position: relative;
+      z-index: 1;
+      text-align: center;
+      color: white;
+      padding-top: 30vh;
+    }
+
+    .content h1 {
+      font-size: 48px;
+      margin-bottom: 20px;
+    }
+
+    .content p {
+      font-size: 24px;
+    }
+    
+    /* CSS sản phẩm giữ nguyên */
+    .product-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+      justify-content: center;
+      padding: 40px 20px;
+      background: linear-gradient(to bottom, #f0f8ff, #ffffff);
+    }
+
+    .product-card {
+      background: white;
+      border-radius: 20px;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+      width: 320px;
+      padding: 25px 20px;
+      text-align: center;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .product-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
+    }
+
+    .product-card img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+      border-radius: 12px;
+      margin-bottom: 15px;
+    }
+
+    .product-card h3 {
+      font-size: 20px;
+      margin-bottom: 10px;
+      color: #e81414;
+    }
+
+    .product-card p {
+      font-size: 18px;
+      color: #007bff;
+      margin-bottom: 15px;
+    }
+
+    .product-card button {
+      padding: 10px 20px;
+      background-color: #007bff;
+      border: none;
+      border-radius: 10px;
+      color: white;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .product-card button:hover {
+      background-color: #0056b3;
+    }
+    {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      overflow: hidden;
+      font-family: Arial, sans-serif;
+      background-color: #000; /* để nổi bật hiệu ứng chữ */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    h1 {
+      font-size: 60px;
+      background: linear-gradient(270deg, #071717, #2480e3, #73139c);
+      background-size: 600% 600%;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      animation: gradientMove 8s ease infinite, glow 2s ease-in-out infinite alternate;
+      text-align: center;
+    }
+
+    @keyframes gradientMove {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    @keyframes glow {
+      from {
+        text-shadow: 0 0 10px #239a9a, 0 0 20px #0f6bcc;
+      }
+      to {
+        text-shadow: 0 0 20px #00ffff, 0 0 40px #ff00ff;
+      }
+    }
+    @media (max-width: 768px) {
+  .product-card {
+    width: 100%;
+  }
+}
+  </style>
+  
+</head>
+<body>
+    <div class="background"></div>
+
+  <div class="content">
+    <h1>Nước Có Gas</h1>
+    <p> 🌊</p>
+  </div>
+
+  
+
+  <!-- Danh sách sản phẩm -->
+  <div class="product-grid">
+    <!-- Sản phẩm 1 -->
+    <div class="product-card"><img src="img/cogas1.jfif" alt="Pepsi"><h3>Pepsi Cola 330ml</h3><p>12.000₫</p><button>Thêm vào giỏ</button></div>
+
+    <!-- Sản phẩm 2 -->
+    <div class="product-card"><img src="img/cogas2.jfif" alt="Coca Cola"><h3>Coca-Cola 330ml</h3><p>12.000₫</p><button>Thêm vào giỏ</button></div>
+
+    <!-- Sản phẩm 3 -->
+    <div class="product-card"><img src="img/cogas3.jfif" alt="Sprite"><h3>Sprite 330ml</h3><p>11.000₫</p><button>Thêm vào giỏ</button></div>
+
+    <!-- Sản phẩm 4 -->
+    <div class="product-card"><img src="img/cogas4.jfif" alt="Fanta Cam"><h3>Fanta Cam 330ml</h3><p>11.000₫</p><button>Thêm vào giỏ</button></div>
+
+    <!-- Sản phẩm 5 -->
+    <div class="product-card"><img src="img/cogas5.jfif" alt="Red Bull"><h3>Red Bull 250ml</h3><p>15.000₫</p><button>Thêm vào giỏ</button></div>
+
+    <!-- Sản phẩm 6 -->
+    <div class="product-card"><img src="img/cogas6.jfif" alt="Mirinda Cam"><h3>Mirinda Cam 330ml</h3><p>10.000₫</p><button>Thêm vào giỏ</button></div>
+
+    <!-- Sản phẩm 7 -->
+    <div class="product-card"><img src="img/cogas7.jfif" alt="7Up"><h3>7Up Chanh 330ml</h3><p>11.000₫</p><button>Thêm vào giỏ</button></div>
+
+    <!-- Sản phẩm 8 -->
+    <div class="product-card"><img src="img/cogas8.jfif" alt="Mountain Dew"><h3>Mountain Dew 330ml</h3><p>12.000₫</p><button>Thêm vào giỏ</button></div>
+
+    <!-- Sản phẩm 9 -->
+    <div class="product-card"><img src="img/cogas9.jfif" alt="Schweppes"><h3>Schweppes Soda 330ml</h3><p>13.000₫</p><button>Thêm vào giỏ</button></div>
+
+    <!-- Sản phẩm 10 -->
+    <div class="product-card"><img src="img/cogas10.jfif" alt="Warrior Energy"><h3>Warrior Energy 250ml</h3><p>14.000₫</p><button>Thêm vào giỏ</button></div>
+
+    <!-- Sản phẩm 11 -->
+    <div class="product-card"><img src="img/cogas11.jfif" alt="Tonic Water"><h3>Tonic Water 330ml</h3><p>13.000₫</p><button>Thêm vào giỏ</button></div>
+
+    <!-- Sản phẩm 12 -->
+    <div class="product-card"><img src="img/cogas12.jfif" alt="Root Beer"><h3>Root Beer 355ml</h3><p>16.000₫</p><button>Thêm vào giỏ</button></div>
+
+    <!-- Sản phẩm 13 -->
+    <div class="product-card"><img src="img/cogas13.jfif" alt="Nước khoáng có gas"><h3>Nước khoáng có gas 500ml</h3><p>9.000₫</p><button>Thêm vào giỏ</button></div>
+
+    <!-- Sản phẩm 14 -->
+    <div class="product-card"><img src="img/cogas14.jfif" alt="Lemon Soda"><h3>Lemon Soda 330ml</h3><p>11.000₫</p><button>Thêm vào giỏ</button></div>
+
+    <!-- Sản phẩm 15 -->
+    <div class="product-card"><img src="img/cogas15.jfif" alt="Cola Light"><h3>Cola Light 330ml</h3><p>12.000₫</p><button>Thêm vào giỏ</button></div>
+
+    <!-- Sản phẩm 16 -->
+    <div class="product-card"><img src="img/cogas16.jfif" alt="Citrus Blast"><h3>Citrus Blast 330ml</h3><p>11.500₫</p><button>Thêm vào giỏ</button></div>
+
+    <!-- Sản phẩm 17 -->
+    <div class="product-card"><img src="img/cogas17.jfif" alt="Ginger Ale"><h3>Ginger Ale 330ml</h3><p>13.500₫</p><button>Thêm vào giỏ</button></div>
+
+    <!-- Sản phẩm 18 -->
+    <div class="product-card"><img src="img/cogas18.jfif" alt="Nước nho có gas"><h3>Grape Soda 330ml</h3><p>12.000₫</p><button>Thêm vào giỏ</button></div>
+
+    <!-- Sản phẩm 19 -->
+    <div class="product-card"><img src="img/cogas19.jfif" alt="Nước táo có gas"><h3>Apple Soda 330ml</h3><p>12.500₫</p><button>Thêm vào giỏ</button></div>
+
+    <!-- Sản phẩm 20 -->
+    <div class="product-card"><img src="img/cogas20.jfif" alt="Nước dâu có gas"><h3>Strawberry Soda 330ml</h3><p>12.500₫</p><button>Thêm vào giỏ</button></div>
+
+
+  </div>
+  </div>
+
+</body>
+</html>

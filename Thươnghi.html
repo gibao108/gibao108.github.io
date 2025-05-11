@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Gas Spark - Thương hiệu nước có gas</title>
+  <style>
+    
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to bottom right, #007BFF, #ffffff, #FF3B3F);
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #fff;
+    }
+
+    .brand-section {
+      text-align: center;
+      padding: 40px;
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 20px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+      animation: fadeIn 1.5s ease-out forwards;
+      max-width: 700px;
+    }
+
+    .brand-name {
+      font-size: 4rem;
+      font-weight: bold;
+      letter-spacing: 3px;
+      color: #ffffff;
+      text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+      animation: bounceIn 1.5s ease-out;
+    }
+
+    .slogan {
+      font-size: 1.6rem;
+      margin: 10px 0 20px;
+      color: #ae6e6e;
+      font-style: italic;
+      animation: fadeInText 2s ease-out 1s forwards;
+      opacity: 0;
+    }
+
+    .description {
+      font-size: 1.1rem;
+      line-height: 1.6;
+      color: #712626;
+      margin-bottom: 30px;
+      opacity: 0;
+      animation: fadeInText 2s ease-out 2s forwards;
+    }
+
+    .cta-button {
+      padding: 12px 24px;
+      font-size: 1.1rem;
+      background-color: #FF3B3F;
+      color: rgb(49, 37, 37);
+      border: none;
+      border-radius: 30px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      opacity: 0;
+      animation: fadeInText 2s ease-out 3s forwards;
+    }
+
+    .cta-button:hover {
+      background-color: #e22c30;
+    }
+
+    /* Animations */
+    @keyframes bounceIn {
+      0% { transform: scale(0.5); opacity: 0; }
+      60% { transform: scale(1.1); opacity: 1; }
+      100% { transform: scale(1); }
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes fadeInText {
+      to { opacity: 1; }
+    }
+  </style>
+</head>
+<body>
+  <div class="brand-section">
+    <div class="brand-name">GAS SPARK</div>
+    <div class="slogan">Bùng nổ sảng khoái – Đánh thức vị giác!</div>
+    <div class="description">
+      Gas Spark là thương hiệu nước có gas tiên phong mang lại sự tươi mới, năng lượng và cảm hứng mỗi ngày.  
+      Với công thức độc đáo, Gas Spark không chỉ giải khát mà còn làm bừng tỉnh mọi giác quan của bạn.  
+      Từ thiết kế lon hiện đại đến hương vị bùng nổ, chúng tôi mang đến một trải nghiệm giải khát đầy khác biệt.
+    </div>
+    <button class="cta-button">Khám phá ngay</button>
+  </div>
+</body>
+</html>

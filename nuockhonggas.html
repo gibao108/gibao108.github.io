@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sản phẩm nước không gas</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      height: 100%;
+      overflow-x: hidden;
+      
+    }
+
+    .background {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 200%;
+      background-image: url('https://images.pexels.com/photos/2912717/pexels-photo-2912717.jpeg?auto=compress&cs=tinysrgb&w=800&lazy=load80');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      animation: scrollBackground 10s linear infinite;
+      z-index: -1;
+    }
+
+    @keyframes scrollBackground {
+      0% {
+        transform: translateY(0);
+      }
+      100% {
+        transform: translateY(-50%);
+      }
+    }
+
+    .content {
+      position: relative;
+      z-index: 1;
+      text-align: center;
+      color: white;
+      padding-top: 30vh;
+    }
+
+    .content h1 {
+  font-size: 60px;
+  background: linear-gradient(to right, #9fdd0f, #ffffff);
+  background-size: 600% 600%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradientMove 8s ease infinite, glow 2s ease-in-out infinite alternate;
+  text-align: center;
+}
+
+/* Thêm phần này ở ngoài class */
+@keyframes gradientMove {
+  0% { background-position: 0% 50%; }
+  100% { background-position: 100% 50%; }
+}
+
+@keyframes glow {
+  from { text-shadow: 0 0 10px #9fdd0f; }
+  to { text-shadow: 0 0 20px #ffffff; }
+}
+
+
+    @keyframes gradientMove {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    @keyframes glow {
+      from {
+        text-shadow: 0 0 10px #44e0c9, 0 0 20px #1b9d74;
+      }
+      to {
+        text-shadow: 0 0 20px #9effe0, 0 0 40px #00ffae;
+      }
+    }
+
+    .product-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+      justify-content: center;
+      padding: 40px 20px;
+      background: linear-gradient(to bottom, #f0fff8, #ffffff);
+    }
+
+    .product-card {
+      background: white;
+      border-radius: 20px;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+      width: 320px;
+      padding: 25px 20px;
+      text-align: center;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .product-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 12px 30px rgba(228, 10, 10, 0.25);
+    }
+
+    .product-card img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+      border-radius: 12px;
+      margin-bottom: 15px;
+    }
+
+    .product-card h3 {
+      font-size: 20px;
+      margin-bottom: 10px;
+      color: #4812fb;
+    }
+
+    .product-card p {
+      font-size: 18px;
+      color: #ce0927;
+      margin-bottom: 15px;
+    }
+
+    .product-card button {
+      padding: 10px 20px;
+      background-color: #20c997;
+      border: none;
+      border-radius: 10px;
+      color: white;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .product-card button:hover {
+      background-color: #149d78;
+    }
+  </style>
+</head>
+<body>
+  <div class="background"></div>
+
+  <div class="content">
+    <h1>Nước Không Gas</h1>
+    <p>💧 Tươi mát từ thiên nhiên</p>
+  </div>
+
+  <!-- Danh sách sản phẩm -->
+  <div class="product-grid">
+    <div class="product-card">
+      <img src="img/kogas1.jpg" alt="Nước suối">
+      <h3>Nước Suối Lavie 500ml</h3>
+      <p>6.000₫</p>
+      <button>Thêm vào giỏ</button>
+    </div>
+    <div class="product-card">
+      <img src="img/kogas2.jpg" alt="Nước ép trái cây">
+      <h3>Nước Ép Cam 330ml</h3>
+      <p>14.000₫</p>
+      <button>Thêm vào giỏ</button>
+    </div>
+    <div class="product-card">
+      <img src="img/kogas3.jpg" alt="Trà xanh">
+      <h3>Trà Xanh Không Độ 455ml</h3>
+      <p>9.000₫</p>
+      <button>Thêm vào giỏ</button>
+    </div>
+    <div class="product-card">
+      <img src="img/kogas4.jpg" alt="Trà chanh">
+      <h3>Trà Chanh C2 360ml</h3>
+      <p>8.000₫</p>
+      <button>Thêm vào giỏ</button>
+    </div>
+    <div class="product-card">
+      <img src="img/kogas5.jpg" alt="Nha đam">
+      <h3>Nước Nha Đam Wonderfarm 330ml</h3>
+      <p>10.000₫</p>
+      <button>Thêm vào giỏ</button>
+    </div>
+    <div class="product-card">
+      <img src="img/kogas6.jpg" alt="Nước xoài">
+      <h3>Nước Xoài Joco 320ml</h3>
+      <p>12.000₫</p>
+      <button>Thêm vào giỏ</button>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Giỏ hàng - Gas Spark</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f5f6fa;
+      margin: 0;
+      padding: 20px;
+    }
+
+    h1 {
+      color: #004aad;
+      text-align: center;
+    }
+
+    .cart-container {
+      max-width: 1000px;
+      margin: 30px auto;
+      background: #fff;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    .cart-item {
+      display: flex;
+      align-items: center;
+      border-bottom: 1px solid #eee;
+      padding: 15px 0;
+    }
+
+    .cart-item img {
+      width: 100px;
+      height: auto;
+      border-radius: 8px;
+      margin-right: 20px;
+    }
+
+    .item-details {
+      flex: 1;
+    }
+
+    .item-details h3 {
+      margin: 0;
+      color: #333;
+    }
+
+    .item-details p {
+      margin: 5px 0;
+      color: #666;
+    }
+
+    .item-actions {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+    }
+
+    .item-actions input {
+      width: 60px;
+      padding: 5px;
+      margin-bottom: 5px;
+    }
+
+    .item-actions button {
+      background-color: #ff3131;
+      color: white;
+      border: none;
+      padding: 8px 12px;
+      border-radius: 6px;
+      cursor: pointer;
+      margin-top: 5px;
+    }
+
+    .item-actions button:hover {
+      background-color: #cc0000;
+    }
+
+    .cart-total {
+      text-align: right;
+      margin-top: 20px;
+      font-size: 18px;
+      color: #333;
+    }
+
+    .checkout-btn {
+      display: block;
+      margin: 20px auto 0;
+      padding: 12px 30px;
+      font-size: 16px;
+      background-color: #004aad;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+
+    .checkout-btn:hover {
+      background-color: #00337a;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>🛒 Giỏ hàng của bạn</h1>
+  <div class="cart-container">
+
+    <!-- Sản phẩm mẫu -->
+    <div class="cart-item">
+      <img src="img/nuoc1.jpg" alt="Nước Gas Spark">
+      <div class="item-details">
+        <h3>Gas Spark Nho</h3>
+        <p>Giá: 15.000₫</p>
+      </div>
+      <div class="item-actions">
+        <input type="number" value="2" min="1" />
+        <button>Cập nhật</button>
+        <button>Xóa</button>
+      </div>
+    </div>
+    
+    <div class="cart-item">
+      <img src="img/nuoc2.jpg" alt="Nước Gas Spark">
+      <div class="item-details">
+        <h3>Gas Spark - Gas Spark Lê</h3>
+        <p>Giá: 17.000₫</p>
+      </div>
+      <div class="item-actions">
+        <input type="number" value="1" min="1" />
+        <button>Cập nhật</button>
+        <button>Xóa</button>
+      </div>
+    </div>
+    <!-- Tổng tiền -->
+    <div class="cart-total">
+      <strong>Tổng cộng: 47.000₫</strong>
+    </div>
+
+    <!-- Nút thanh toán -->
+    <button class="checkout-btn">Tiến hành thanh toán</button>
+<script>
+  document.querySelector('.checkout-btn').addEventListener('click', function () {
+    window.location.href = 'Thanhtoan.html';
+  });
+</script>
+  </div>
+</body>
+</html>

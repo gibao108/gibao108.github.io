@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Đăng ký - Gas Spark</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #004aad, #ff3131);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .register-box {
+      background-color: #fff;
+      padding: 40px;
+      border-radius: 12px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+      width: 100%;
+      max-width: 450px;
+      text-align: center;
+    }
+
+    .register-box h2 {
+      margin-bottom: 20px;
+      color: #004aad;
+    }
+
+    .register-box input {
+      width: 100%;
+      padding: 12px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 16px;
+    }
+
+    .register-box button {
+      width: 100%;
+      padding: 12px;
+      background-color: #ff3131;
+      color: #fff;
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+
+    .register-box button:hover {
+      background-color: #d60000;
+    }
+
+    .register-box .links {
+      margin-top: 15px;
+      font-size: 14px;
+    }
+
+    .register-box .links a {
+      color: #004aad;
+      text-decoration: none;
+    }
+
+    .register-box .links a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="register-box">
+    <h2>Tạo tài khoản Gas Spark</h2>
+    <form onsubmit="chuyenTrang(event)">
+      <input type="text" name="ten" placeholder="Họ và tên" required>
+      <input type="email" name="email" placeholder="Email" required>
+      <input type="password" name="password" placeholder="Mật khẩu" required minlength="6">
+      <button type="submit">Đăng ký</button>
+    </form>
+    
+    <script>
+      function chuyenTrang(event) {
+        event.preventDefault();
+        window.location.href = "đăngnhap.html";
+      }
+    </script>    
+    <div class="links">
+      <p>Đã có tài khoản? <a href="đăngnhap.html">Đăng nhập ngay</a></p>
+    </div>
+  </div>
+
+</body>
+</html>
